@@ -1,0 +1,65 @@
+<project name="SalesDashboardsProject" default="validate" basedir="." xmlns:sf="antlib:com.salesforce">
+
+  <property name="build.properties" value="build.properties" />
+  <property file="${build.properties}" />
+  <property environment="env" />
+
+	<target name="validate">
+		<property name="sf.allowMissingFiles" value="false" />
+		<property name="sf.ignoreWarnings" value="false" />
+		<property name="sf.deployRoot" value="./.deploy" />
+		<sf:deploy username="${sf.username}" 
+			password="${sf.password}" 
+			serverurl="${sf.serverUrl}" 
+			deployRoot="${sf.deployRoot}"
+			pollWaitMillis="10000"
+			maxPoll="500"
+			allowMissingFiles="${sf.allowMissingFiles}"
+			ignoreWarnings="${sf.ignoreWarnings}"
+			testLevel="RunSpecifiedTests"
+			checkOnly="true">
+			<runTest>ActiveOpportunityKanbanControllerTest</runTest>
+			<runTest>BrokenRulesCalculatorTest</runTest>
+			<runTest>PopulateOppBrokenRulesInSFBatchTest</runTest>
+			<runTest>SalesHomeHeaderControllerTest</runTest>
+			<runTest>SFH_PopulateExplicitImpersonationTest</runTest>
+			<runTest>SFH_FutureMeeting_StepTest</runTest>
+			<runTest>SFH_ConsultantControllerTest</runTest>
+			<runTest>SFH_ReportRepositoryControllerTest</runTest>
+			<runTest>SFH_CustomListViewControllerTest</runTest>
+			<runTest>SFH_HomePageFilterControllerTest</runTest>
+		</sf:deploy>
+  </target>
+
+  <target name="build">
+    <property name="sf.trace" value="false" />
+  	<property name="sf.testLevel" value="NoTestRun" />
+  	<property name="sf.deployRoot" value="./.deploy" />
+    <property name="sf.rollbackOnError" value="true" />
+
+    <sf:deploy username="${sf.username}" 
+	       password="${sf.password}" 
+	       serverurl="${sf.serverUrl}" 
+	       deployRoot="${sf.deployRoot}"
+	       pollWaitMillis="10000" 
+	       trace="${sf.trace}" 
+	       maxPoll="500"  
+	       logType="Debugonly"
+    	   testLevel="${sf.testLevel}"
+	       checkOnly="false"
+         rollbackOnError="${sf.rollbackOnError}"/>
+  </target>
+  
+  <target name="retrieve">
+  	<property name="sf.retrieveTarget" value="./.deploy" />
+    <property name="sf.unpackaged" value="./.deploy/package.xml" />
+    
+    <mkdir dir="${sf.retrieveTarget}"/>
+
+    <sf:retrieve username="${sf.username}" 
+			password="${sf.password}" 
+			serverurl="${sf.serverUrl}" 
+			retrieveTarget="${sf.retrieveTarget}" 
+			unpackaged="${sf.unpackaged}" />
+  </target>
+</project>
