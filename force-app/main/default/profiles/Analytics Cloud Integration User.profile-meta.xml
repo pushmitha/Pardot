@@ -377,11 +377,7 @@
     </fieldPermissions>
   <fieldPermissions>
         <editable>false</editable>
-        <field>  <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions></field>
         <readable>true</readable>
     </fieldPermissions>
   <fieldPermissions>
