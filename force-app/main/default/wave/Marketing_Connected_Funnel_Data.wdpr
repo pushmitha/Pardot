@@ -1,0 +1,1566 @@
+{
+  "version" : "61.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Synced_Comments_from_Marketing__c", "Id", "Name", "Company", "Street", "City", "State", "Country", "Latitude", "Longitude", "LeadSource", "Industry", "OwnerId", "IsConverted", "ConvertedDate", "IsUnreadByOwner", "CreatedDate", "Lead_Source_Most_Recent__c", "New_Lead__c", "up__District__c", "up__Region__c", "pi__campaign__c", "pi__conversion_date__c", "pi__created_date__c", "pi__first_activity__c", "pi__score__c", "pi__url__c", "pi__utm_campaign__c", "pi__utm_medium__c", "pi__utm_source__c", "Firm_Description__c", "Status__c", "Marketing_Engaged_Time_Stamp__c", "Marketing_Qualified_Time_Stamp__c", "Nurture_Time_Stamp__c", "Re_Engaged_Time_Stamp__c", "Sales_Converted_Time_Stamp__c", "Sales_Qualified_Time_Stamp__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Lead",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Lead"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "pi__comments__c", "Synced_Comments_from_Marketing__c", "Id", "AccountId", "Name", "RecordTypeId", "MailingCity", "MailingState", "MailingPostalCode", "MailingCountry", "MailingLatitude", "MailingLongitude", "LeadSource", "CreatedDate", "LastActivityDate", "Lead_Source__c", "Region__c", "Date_Last_Activity__c", "Contact_Converted_From_Lead__c", "up__District__c", "up__Region__c", "pi__campaign__c", "pi__conversion_date__c", "pi__last_activity__c", "pi__notes__c", "pi__url__c", "pi__utm_campaign__c", "pi__utm_content__c", "pi__utm_medium__c", "pi__utm_source__c", "pi__utm_term__c", "Status__c", "Marketing_Engaged_Time_Stamp__c", "Marketing_Qualified_Time_Stamp__c", "Nurture_Time_Stamp__c", "Re_Engaged_Time_Stamp__c", "Sales_Converted_Time_Stamp__c", "Sales_Qualified_Time_Stamp__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Contact",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Contact"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Sentiment_Total__c", "Id", "IsDeleted", "AccountId", "Name", "StageName", "Amount", "CloseDate", "IsClosed", "IsWon", "ForecastCategory", "ForecastCategoryName", "CampaignId", "HasOpportunityLineItem", "CreatedDate", "LastStageChangeDate", "ContactId", "Date_Opportunity_Closed__c", "Marketing_Source__c", "Related_Product_Families__c", "Strategy__c", "Total_Potential_ASV__c", "Record_Type__c", "Product_Family__c", "Opportunity_Status__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Opportunity",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Opportunity"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "MasterRecordId", "Name", "Type", "RecordTypeId", "ParentId", "BillingStreet", "BillingCity", "BillingState", "BillingPostalCode", "BillingCountry", "BillingStateCode", "BillingLatitude", "BillingLongitude", "BillingGeocodeAccuracy", "ShippingPostalCode", "Industry", "Description", "Rating", "OwnerId", "CreatedDate", "LastModifiedDate", "LastActivityDate", "LastViewedDate", "AccountSource", "Account_Firm_Type__c", "Current_Total_ASV__c", "Firm_Description__c", "Firm_Type__c", "Local_Sales_Rep__c", "Location_Firm_Description__c", "Main_Phone__c", "Record_Type__c", "Region__c", "Support_Model__c", "Account_region__c", "Marketing_Strategy__c", "Account_Status_Definition__c", "Firm_Class__c", "Account_Segment__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET4" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Type", "RecordTypeId", "CampaignMemberRecordTypeId", "Id", "Name", "ParentId", "Status", "StartDate", "EndDate", "BudgetedCost", "ActualCost", "IsActive", "Description", "NumberOfLeads", "NumberOfConvertedLeads", "NumberOfContacts", "NumberOfResponses", "NumberOfOpportunities", "NumberOfWonOpportunities", "OwnerId", "CreatedDate", "LastModifiedDate", "LastActivityDate", "Hashtag__c", "pi__Pardot_Campaign_Id__c", "Region__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Campaign",
+          "connectionName" : "Weekly_Sync",
+          "sourceObjectName" : "Campaign"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET5" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "OpportunityId", "CampaignId", "ContactId", "Influence", "ModelId", "RevenueShare", "CampaignHashtag__c", "CreatedDate" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "CampaignInfluence",
+          "connectionName" : "Weekly_Sync",
+          "sourceObjectName" : "CampaignInfluence"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET6" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "MasterLabel" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "CampaignInfluenceModel",
+          "connectionName" : "Weekly_Sync",
+          "sourceObjectName" : "CampaignInfluenceModel"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET8" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CampaignId", "Status", "HasResponded", "Type", "LeadOrContactId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "CampaignMember",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "CampaignMember"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET9" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "IsActive", "ManagerId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "JOIN51" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Connected Funnel Leads",
+          "name" : "Connected_Funnel_Leads",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET10" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Marketing_Lead_Status__c", "Id", "RecordTypeId", "WhoId", "WhatId", "Subject", "ActivityDate", "Status", "Priority", "IsHighPriority", "OwnerId", "Description", "Type", "AccountId", "IsClosed", "CreatedDate", "TaskSubtype", "Activity_Type__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Task",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Task"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FILTER1" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "RecordTypeId",
+          "operator" : "EQUAL",
+          "operands" : [ "0121C000001DanJQAS" ]
+        } ]
+      }
+    },
+    "FILTER2" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET6" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "MasterLabel",
+          "operator" : "EQUAL",
+          "operands" : [ "Even Distribution Model" ]
+        } ]
+      }
+    },
+    "FILTER4" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET2" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "IsDeleted",
+          "operator" : "EQUAL",
+          "operands" : [ "false" ]
+        } ]
+      }
+    },
+    "JOIN26" : {
+      "action" : "join",
+      "sources" : [ "FILTER2", "LOAD_DATASET5" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "CampaignInfluence",
+        "rightKeys" : [ "ModelId" ]
+      }
+    },
+    "JOIN30" : {
+      "action" : "join",
+      "sources" : [ "JOIN62", "FILTER5" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Campaign.OwnerId" ],
+        "rightQualifier" : "CampaignOwner",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER5" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET9" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "IsActive",
+          "operator" : "EQUAL",
+          "operands" : [ "true" ]
+        } ]
+      }
+    },
+    "JOIN31" : {
+      "action" : "join",
+      "sources" : [ "JOIN30", "LOAD_DATASET3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Contact.AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "OUTPUT2" : {
+      "action" : "save",
+      "sources" : [ "JOIN64" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Connected Funnel Contacts",
+          "name" : "Connected_Funnel_Contacts",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT3" : {
+      "action" : "save",
+      "sources" : [ "JOIN43" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Connected Funnel ToDos",
+          "name" : "Connected_Funnel_ToDos",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "JOIN42" : {
+      "action" : "join",
+      "sources" : [ "FILTER1", "LOAD_DATASET3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "WhatId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN43" : {
+      "action" : "join",
+      "sources" : [ "JOIN42", "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "WhoId" ],
+        "rightQualifier" : "Contact",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN50" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET8", "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "INNER",
+        "leftKeys" : [ "LeadOrContactId" ],
+        "rightQualifier" : "Contact",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN51" : {
+      "action" : "join",
+      "sources" : [ "JOIN57", "FILTER1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "MktingToDo",
+        "rightKeys" : [ "WhatId" ]
+      }
+    },
+    "LOAD_DATASET11" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "RecordType",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "RecordType"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN53" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET4", "LOAD_DATASET11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "RecordTypeId" ],
+        "rightQualifier" : "CampaignRecordType",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER7" : {
+      "action" : "filter",
+      "sources" : [ "JOIN53" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "CampaignRecordType.Name",
+          "operator" : "EQUAL",
+          "operands" : [ "Marketing" ]
+        }, {
+          "type" : "TEXT",
+          "field" : "Type",
+          "operator" : "NOT",
+          "operands" : [ "Marketing Objective", "Operational", "Support Desk", "FDS Corporate", "User Research", "blank" ]
+        } ]
+      }
+    },
+    "JOIN54" : {
+      "action" : "join",
+      "sources" : [ "FILTER7", "JOIN63" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "CampaignModel",
+        "rightKeys" : [ "CampaignInfluence.CampaignId" ]
+      }
+    },
+    "JOIN56" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET0", "LOAD_DATASET8" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "INNER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "CampaignMember",
+        "rightKeys" : [ "LeadOrContactId" ]
+      }
+    },
+    "JOIN57" : {
+      "action" : "join",
+      "sources" : [ "JOIN56", "FILTER7" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "CampaignMember.CampaignId" ],
+        "rightQualifier" : "Campaign",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN59" : {
+      "action" : "join",
+      "sources" : [ "FILTER4", "JOIN54" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "INNER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "Campaign",
+        "rightKeys" : [ "CampaignModel.OpportunityContactRole.OpportunityId" ]
+      }
+    },
+    "JOIN60" : {
+      "action" : "join",
+      "sources" : [ "JOIN59", "LOAD_DATASET1" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Campaign.CampaignModel.OpportunityContactRole.ContactId" ],
+        "rightQualifier" : "Contact",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN61" : {
+      "action" : "join",
+      "sources" : [ "JOIN60", "LOAD_DATASET3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Contact.AccountId" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "OUTPUT5" : {
+      "action" : "save",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Connected Funnel Opportunities",
+          "name" : "Connected_Funnel_Opportunities",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "JOIN61" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "Total_Influenced_ASV",
+          "label" : "Total_Influenced ASV",
+          "formulaExpression" : "(\"Total_Potential_ASV__c\" * \"Campaign.CampaignModel.CampaignInfluence.Influence\")/100\r\n",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "Weighted_Influenced_ASV",
+          "label" : "Weighted Influenced ASV",
+          "formulaExpression" : "(Total_Influenced_ASV * Sentiment_Total__c)/100",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "JOIN62" : {
+      "action" : "join",
+      "sources" : [ "JOIN50", "FILTER7" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "CampaignId" ],
+        "rightQualifier" : "Campaign",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET12" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "OpportunityId", "ContactId", "Role", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "OpportunityContactRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "OpportunityContactRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN63" : {
+      "action" : "join",
+      "sources" : [ "JOIN26", "LOAD_DATASET12" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "CampaignInfluence.ContactId" ],
+        "rightQualifier" : "OpportunityContactRole",
+        "rightKeys" : [ "ContactId" ]
+      }
+    },
+    "OUTPUT0_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET23" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Tags",
+          "name" : "Marketing_Tags",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT1_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET22" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Landing Pages",
+          "name" : "Marketing_Landing_Pages",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT2_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET21" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Forms and Handlers",
+          "name" : "Marketing_Forms_and_Handlers",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT3_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET19" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Email Templates",
+          "name" : "Marketing_Email_Templates",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT4_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET18" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Campaigns",
+          "name" : "Marketing_Campaigns",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT5_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET17" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Prospects",
+          "name" : "Marketing_Prospects",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT6_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET16" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Visitors",
+          "name" : "Marketing_Visitors",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT7_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET14" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Emails",
+          "name" : "Marketing_Emails",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "OUTPUT8_copy0" : {
+      "action" : "save",
+      "sources" : [ "LOAD_DATASET13" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Marketing Opportunities",
+          "name" : "Marketing_Opportunities",
+          "folderName" : "Marketing_Analytics_Slalom"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET13" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "close_date", "opportunity_type", "campaign_crm_id", "opportunity_date", "opportunity_crm_id", "tags", "campaign_name", "opportunity_stage", "opportunity_status", "opportunity_id", "opportunity_name", "campaign_date", "campaign_id", "close_velocity", "opportunity_probability", "campaign_cost", "monetary_value" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Opportunities",
+          "name" : "pdOpportunity"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET14" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "email_id", "stats_date", "subject", "sent_to", "created_at", "campaign_name", "updated_at", "email_name", "campaign_id", "suppressed_from", "stats_id", "campaign_crm_id", "created_by_crm_id", "created_by", "tags", "sent_at", "updated_by", "updated_by_crm_id", "opt_out_rate", "total_html_opens", "queued", "delivered", "hard_bounced", "opt_outs", "unique_html_opens", "unique_clicks", "total_bounced", "total_clicks", "spam_complaints", "click_to_open_rate", "html_open_rate", "unique_ctr", "sent", "spam_complaint_rate", "delivery_rate", "total_ctr", "soft_bounced" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Emails",
+          "name" : "pdEmail"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET16" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "campaign_name", "campaign_crm_id", "stage", "stats_date", "campaign_id", "tags", "visitor_count" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Visitors",
+          "name" : "pdVisitor"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET17" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "country", "assigned_date", "account_crm_id", "source_campaign", "created_by_last_name", "source", "id", "state", "fax", "job_title", "campaign_id", "crm_last_activity_date", "zip", "is_do_not_call", "last_activity_date", "opted_out", "contact_crm_id", "created_by_first_name", "crm_owner_fid", "tags", "updated_by_last_name", "assigned_user_last_name", "full_name", "is_archived", "assigned_user_first_name", "phone", "grade", "is_do_not_email", "salutation", "employees", "annual_revenue", "most_recent_visitor_date", "pardot_account_id", "city", "visitor_id", "crm_contact_fid", "industry", "assigned_user_full_name", "account_name", "company", "years_in_business", "department", "first_name", "email", "crm_lead_fid", "website", "comments", "created_by_full_name", "updated_by_first_name", "is_assigned" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Prospects",
+          "name" : "pdProspect"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET18" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "campaign_name", "campaign_crm_id", "campaign_date", "campaign_id", "tags", "cost" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Campaigns",
+          "name" : "pdCampaign"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET19" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "stats_date", "subject", "created_at", "type", "campaign_name", "updated_at", "campaign_id", "stats_id", "campaign_crm_id", "email_template_name", "tags", "email_template_id", "sender", "opt_out_rate", "total_hard_bounces", "total_delivered", "total_html_opens", "queued", "opt_outs", "unique_html_opens", "unique_clicks", "total_clicks", "total_soft_bounces", "spam_complaints", "unique_ctr", "sent", "spam_complaint_rate", "delivery_rate", "total_ctr" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Email Templates",
+          "name" : "pdEmailTemplate"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET21" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "campaign_crm_id", "stats_date", "asset_id", "tags", "campaign_name", "asset_name", "asset_type", "campaign_id", "total_submission_rate", "conversions", "total_errors", "total_error_rate", "total_views", "unique_errors", "unique_views", "unique_clicks", "total_clicks", "unique_submissions", "total_conversion_rate", "total_submissions" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Forms and Form Handlers",
+          "name" : "pdFormAndHandler"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET22" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "stats_date", "created_at", "landing_page_name", "short_url", "campaign_name", "updated_at", "campaign_id", "campaign_crm_id", "created_by_crm_id", "created_by", "url", "tags", "updated_by", "updated_by_crm_id", "landing_page_id", "form_name", "conversions", "total_views", "unique_errors", "unique_views", "unique_clicks", "total_clicks", "unique_submissions", "total_submissions", "total_errors" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Landing Pages",
+          "name" : "pdLandingPage"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET23" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "tag_name", "tag_id" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Pardot Tags",
+          "name" : "pdTag"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN64" : {
+      "action" : "join",
+      "sources" : [ "JOIN31", "FILTER1" ],
+      "schema" : {
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Contact.Id" ],
+        "rightQualifier" : "MktingToDos",
+        "rightKeys" : [ "WhoId" ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "Lead",
+        "type" : "LOAD_DATASET",
+        "top" : 812,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "Contact",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "Opportunity",
+        "type" : "LOAD_DATASET",
+        "top" : 1092,
+        "left" : 532,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET3" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 1232,
+        "left" : 672,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET4" : {
+        "label" : "Campaign",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET5" : {
+        "label" : "CampaignInfluence",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET6" : {
+        "label" : "CampaignInfluenceModel",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET8" : {
+        "label" : "CampaignMember",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET9" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 952,
+        "left" : 532,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "OUTPUT1" : {
+        "label" : "Output Marketing Leads",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 532,
+        "left" : 952
+      },
+      "LOAD_DATASET10" : {
+        "label" : "Task",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 532,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "FILTER1" : {
+        "label" : "Filter for Marketing ToDo's",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 672,
+        "left" : 672
+      },
+      "FILTER2" : {
+        "label" : "Filter for Even Distribution",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 112,
+        "left" : 252
+      },
+      "FILTER4" : {
+        "label" : "Filter for Is Deleted = False",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 1092,
+        "left" : 672
+      },
+      "JOIN26" : {
+        "label" : "Join Campaign influence to Campaign infulence model",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 392
+      },
+      "JOIN30" : {
+        "label" : "Join User to get Campaign owner",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 812
+      },
+      "FILTER5" : {
+        "label" : "Filter for Active Users",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 952,
+        "left" : 672
+      },
+      "JOIN31" : {
+        "label" : "Join Account to Campaigns",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 952
+      },
+      "OUTPUT2" : {
+        "label" : "Output Marketing Contacts",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 392,
+        "left" : 1232
+      },
+      "OUTPUT3" : {
+        "label" : "Output Marketing ToDo's",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 812,
+        "left" : 1092
+      },
+      "JOIN42" : {
+        "label" : "Join Account to Tasks",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 812
+      },
+      "JOIN43" : {
+        "label" : "Join Contacts to Accounts and Tasks",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 952
+      },
+      "JOIN50" : {
+        "label" : "Join Contact to Campaign member",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 532
+      },
+      "JOIN51" : {
+        "label" : "Join Mkting ToDos to leads",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 812
+      },
+      "LOAD_DATASET11" : {
+        "label" : "RecordType",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 252,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN53" : {
+        "label" : "Join record type to campaign to get campaign record type",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 392
+      },
+      "FILTER7" : {
+        "label" : "Filter for RecordType = marketing and certian types of campaigns",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 252,
+        "left" : 532
+      },
+      "JOIN54" : {
+        "label" : "Join Campaign model and contact role to Campaign",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 672
+      },
+      "JOIN56" : {
+        "label" : "Join Campaign Member to Lead",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 532
+      },
+      "JOIN57" : {
+        "label" : "Join Campaigns to Leads",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 672
+      },
+      "JOIN59" : {
+        "label" : "Join contact role Oppty",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 812
+      },
+      "JOIN60" : {
+        "label" : "Join Contacts to Oppty contact role",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 952
+      },
+      "JOIN61" : {
+        "label" : "Join Accounts to Oppties",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 1092
+      },
+      "OUTPUT5" : {
+        "label" : "Output Opportunities",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 1372
+      },
+      "TRANSFORM0" : {
+        "label" : "Calculate Influenced ASV",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 1232,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Weighted ASV"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "FORMULA1"
+        } ]
+      },
+      "JOIN62" : {
+        "label" : "Join Campaign to Campaign Member",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 672
+      },
+      "LOAD_DATASET12" : {
+        "label" : "OpportunityContactRole",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 392,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN63" : {
+        "label" : "Join Oppty Contact role to campaign influence",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 532
+      },
+      "OUTPUT0_copy0" : {
+        "label" : "Output Tags",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1372,
+        "left" : 252
+      },
+      "OUTPUT1_copy0" : {
+        "label" : "Output Landing Pages",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1512,
+        "left" : 252
+      },
+      "OUTPUT2_copy0" : {
+        "label" : "Output Forms and Handlers",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1652,
+        "left" : 252
+      },
+      "OUTPUT3_copy0" : {
+        "label" : "Output Email Templates",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1792,
+        "left" : 252
+      },
+      "OUTPUT4_copy0" : {
+        "label" : "Output Campaigns",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1932,
+        "left" : 252
+      },
+      "OUTPUT5_copy0" : {
+        "label" : "Output Prospects",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 2072,
+        "left" : 252
+      },
+      "OUTPUT6_copy0" : {
+        "label" : "Output Visitors",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 2212,
+        "left" : 252
+      },
+      "OUTPUT7_copy0" : {
+        "label" : "Output Emails",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 2352,
+        "left" : 252
+      },
+      "OUTPUT8_copy0" : {
+        "label" : "Output Opportunities Copy",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 2492,
+        "left" : 252
+      },
+      "LOAD_DATASET13" : {
+        "label" : "Pardot Opportunities",
+        "type" : "LOAD_DATASET",
+        "top" : 2492,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET14" : {
+        "label" : "Pardot Emails",
+        "type" : "LOAD_DATASET",
+        "top" : 2352,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET16" : {
+        "label" : "Pardot Visitors",
+        "type" : "LOAD_DATASET",
+        "top" : 2212,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET17" : {
+        "label" : "Pardot Prospects",
+        "type" : "LOAD_DATASET",
+        "top" : 2072,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET18" : {
+        "label" : "Pardot Campaigns",
+        "type" : "LOAD_DATASET",
+        "top" : 1932,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET19" : {
+        "label" : "Pardot Email Templates",
+        "type" : "LOAD_DATASET",
+        "top" : 1792,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET21" : {
+        "label" : "Pardot Forms and Form Handlers",
+        "type" : "LOAD_DATASET",
+        "top" : 1652,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET22" : {
+        "label" : "Pardot Landing Pages",
+        "type" : "LOAD_DATASET",
+        "top" : 1512,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET23" : {
+        "label" : "Pardot Tags",
+        "type" : "LOAD_DATASET",
+        "top" : 1372,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN64" : {
+        "label" : "Join Marketing todos to Contacts",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 1092
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0",
+      "target" : "JOIN56"
+    }, {
+      "source" : "LOAD_DATASET8",
+      "target" : "JOIN50"
+    }, {
+      "source" : "JOIN62",
+      "target" : "JOIN30"
+    }, {
+      "source" : "JOIN57",
+      "target" : "JOIN51"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "FILTER1"
+    }, {
+      "source" : "LOAD_DATASET6",
+      "target" : "FILTER2"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "FILTER4"
+    }, {
+      "source" : "FILTER2",
+      "target" : "JOIN26"
+    }, {
+      "source" : "LOAD_DATASET5",
+      "target" : "JOIN26"
+    }, {
+      "source" : "FILTER5",
+      "target" : "JOIN30"
+    }, {
+      "source" : "LOAD_DATASET9",
+      "target" : "FILTER5"
+    }, {
+      "source" : "JOIN30",
+      "target" : "JOIN31"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN31"
+    }, {
+      "source" : "JOIN64",
+      "target" : "OUTPUT2"
+    }, {
+      "source" : "JOIN51",
+      "target" : "OUTPUT1"
+    }, {
+      "source" : "FILTER1",
+      "target" : "JOIN42"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN42"
+    }, {
+      "source" : "JOIN42",
+      "target" : "JOIN43"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN43"
+    }, {
+      "source" : "JOIN43",
+      "target" : "OUTPUT3"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN50"
+    }, {
+      "source" : "FILTER1",
+      "target" : "JOIN51"
+    }, {
+      "source" : "LOAD_DATASET4",
+      "target" : "JOIN53"
+    }, {
+      "source" : "LOAD_DATASET11",
+      "target" : "JOIN53"
+    }, {
+      "source" : "JOIN53",
+      "target" : "FILTER7"
+    }, {
+      "source" : "FILTER7",
+      "target" : "JOIN54"
+    }, {
+      "source" : "JOIN63",
+      "target" : "JOIN54"
+    }, {
+      "source" : "LOAD_DATASET8",
+      "target" : "JOIN56"
+    }, {
+      "source" : "JOIN56",
+      "target" : "JOIN57"
+    }, {
+      "source" : "FILTER7",
+      "target" : "JOIN57"
+    }, {
+      "source" : "FILTER4",
+      "target" : "JOIN59"
+    }, {
+      "source" : "JOIN54",
+      "target" : "JOIN59"
+    }, {
+      "source" : "JOIN59",
+      "target" : "JOIN60"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN60"
+    }, {
+      "source" : "JOIN60",
+      "target" : "JOIN61"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN61"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "OUTPUT5"
+    }, {
+      "source" : "JOIN61",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "JOIN50",
+      "target" : "JOIN62"
+    }, {
+      "source" : "FILTER7",
+      "target" : "JOIN62"
+    }, {
+      "source" : "JOIN26",
+      "target" : "JOIN63"
+    }, {
+      "source" : "LOAD_DATASET12",
+      "target" : "JOIN63"
+    }, {
+      "source" : "LOAD_DATASET13",
+      "target" : "OUTPUT8_copy0"
+    }, {
+      "source" : "LOAD_DATASET14",
+      "target" : "OUTPUT7_copy0"
+    }, {
+      "source" : "LOAD_DATASET16",
+      "target" : "OUTPUT6_copy0"
+    }, {
+      "source" : "LOAD_DATASET17",
+      "target" : "OUTPUT5_copy0"
+    }, {
+      "source" : "LOAD_DATASET18",
+      "target" : "OUTPUT4_copy0"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "OUTPUT3_copy0"
+    }, {
+      "source" : "LOAD_DATASET21",
+      "target" : "OUTPUT2_copy0"
+    }, {
+      "source" : "LOAD_DATASET22",
+      "target" : "OUTPUT1_copy0"
+    }, {
+      "source" : "LOAD_DATASET23",
+      "target" : "OUTPUT0_copy0"
+    }, {
+      "source" : "JOIN31",
+      "target" : "JOIN64"
+    }, {
+      "source" : "FILTER1",
+      "target" : "JOIN64"
+    } ],
+    "hiddenColumns" : [ {
+      "fieldName" : "Id",
+      "objectType" : "connectedDataset",
+      "objectName" : "Weekly_Sync$Campaign"
+    } ]
+  },
+  "runMode" : "full"
+}

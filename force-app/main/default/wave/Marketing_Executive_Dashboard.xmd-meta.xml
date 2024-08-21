@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>Conversion Rate Difference</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>numberColor</property>
+            <referenceField>Conversion Rate Difference</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Lead_Conversion_KPI_8.Conversion Rate Difference</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>BounceRate_1.D</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Email_Open_Rate_1.B</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>Unique_CTR_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>OptOutRate_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>SpamRate_1.B</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>FormSubmissionRate_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Opportunity_Details_1.Campaign Influence %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_By_Firm_Typ_1.Total Influenced ASV</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Visitor_Conversion_r_1.Visitor Conversion Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Lead_Conversion_KPI_7.Conversion Rate Difference</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>Conversion Difference%</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>numberColor</property>
+            <referenceField>Conversion Difference%</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Lead_Conversion_KPI_7.Conversion Difference%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>Budgeted_By_Campaign_1.Budgeted Cost</field>
+        <formatCustomFormat>[&quot;$#,###.00&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>MetricSummary_New_1.MQL Rate%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>MetricSummary_New_1.SQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_1.Oppty Win Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>Closed Won Diff</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>numberColor</property>
+            <referenceField>Closed Won Diff</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Pipeline_KPI_1.Closed Won Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>Open Pipe Diff</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>0</bin>
+                <formatValue>#006714</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>numberColor</property>
+            <referenceField>Open Pipe Diff</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Pipeline_KPI_1.Open Pipe Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Current Open Pipe</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Current Closed Won</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Previous Open Pipe</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Prev Closed Won</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Closed Won Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Open Pipe Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_2.Oppty Win Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelMetri_1.closed Won</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelMetri_1.Open Pipeline</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.SQL Rate % Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.MQL Rate % Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.Prev SQL Rate%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.Curr SQL Rate%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.Prev MQL Rate%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>31</sortIndex>
+    </measures>
+    <measures>
+        <field>Metric_Summary_New_1.Curr MQL Rate%</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>32</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelLifeC_1.Prev SQL rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>33</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelLifeC_1.Prev MQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>34</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelLifeC_1.Engaged: SQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>35</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelLifeC_1.SQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>36</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelLifeC_1.MQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>37</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.Oppty Win Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>38</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.ASV Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>39</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.Weighted Pipeline</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>40</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.Closed ASV</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>41</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.Avg Deal Size</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>42</sortIndex>
+    </measures>
+    <measures>
+        <field>Weighted_Pipeline_1.Prev Closed ASV</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>43</sortIndex>
+    </measures>
+    <measures>
+        <field>Influenced_ASV_1.Total Influenced ASV</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>44</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Marketing_Executive_Dashboard</waveVisualization>
+</WaveXmd>

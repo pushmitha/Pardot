@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <measures>
+        <field>Open_Weighted_Pipeli_1.Avg Deal Size</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Open_Weighted_Pipeli_1.Closed ASV</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>Open_Weighted_Pipeli_1.Weighted Pipeline</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelMetri_1.Engaged: SQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>MarketingFunnelMetri_1.SQL Rate %</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_1.Oppty Win Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Pipeline_KPI_1.Open Pipe Diff</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Campaign_Region_filt_1.C</field>
+        <isDerived>false</isDerived>
+        <label>Lead Count</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>Campaign_Region_filt_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Contact Count</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>Campaign_Region_filt_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Total Row Count</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>Visitor_Conversion_r_1.Visitor Conversion Rate</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,1]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Campaign_Strategy_and_Program_Dashboard</waveVisualization>
+</WaveXmd>
